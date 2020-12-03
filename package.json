@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "eslint": "^7.0.0",
-    "js-yaml": "git+ssh://git@github.com:nodeca/js-yaml.git#dev",
+    "js-yaml": "nodeca/js-yaml#dev",
     "mocha": "^7.1.2",
     "nyc": "^15.1.0"
   },
