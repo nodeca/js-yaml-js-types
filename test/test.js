@@ -333,5 +333,17 @@ describe('Issues', function () {
       assert.deepEqual(Object.keys(data).length, 1);
       assert(/2019/.test(Object.keys(data)[0]));
     });
+
+    it('Should not execute code when anchor name is special', function () {
+      var contents = `
+a: &hasOwnProperty !<tag:yaml.org,2002:js/function> 'function(){throw new Error("code execution")}'
+b: *hasOwnProperty
+`;
+      var data = yaml.load(contents, { schema });
+
+      assert.deepEqual(Object.keys(data), [ 'a', 'b' ]);
+      assert(typeof data.a === 'function');
+      assert(typeof data.b === 'function');
+    });
   });
 });
