@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "eslint": "^7.0.0",
-    "js-yaml": "nodeca/js-yaml#dev",
+    "js-yaml": "^4.0.0",
     "mocha": "^7.1.2",
     "nyc": "^15.1.0"
   },
