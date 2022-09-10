@@ -21,11 +21,13 @@
   },
   "devDependencies": {
     "eslint": "^7.0.0",
-    "js-yaml": "^4.0.0",
     "mocha": "^7.1.2",
     "nyc": "^15.1.0"
   },
   "dependencies": {
     "esprima": "^4.0.1"
+  },
+  "peerDependencies": {
+    "js-yaml": "4.x"
   }
 }
