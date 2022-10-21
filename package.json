@@ -27,5 +27,8 @@
   },
   "dependencies": {
     "esprima": "^4.0.1"
+  },
+  "peerDependencies": {
+    "js-yaml": "4.x"
   }
 }
